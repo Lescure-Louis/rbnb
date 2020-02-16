@@ -5,5 +5,7 @@ class Costume < ApplicationRecord
   validates :name, presence: true
   validates :price, presence: true
   validates :size, presence: true, inclusion: { in: SIZE }
+  has_one_attached :photo
+
 
 end

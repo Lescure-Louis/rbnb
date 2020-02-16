@@ -29,11 +29,15 @@ puts 'Creating user...'
 
  puts 'Creating costumes...'
 
+ file = URI.open('https://images.unsplash.com/photo-1559096996-3b5e8f025ab3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')
+
   dress = Costume.new({
      name:      'Dress',
      size:      'XS',
      price: 15
    })
+
+  dress.photo.attach(io: file, filename: 'locky.jpg', content_type: 'image/jpg')
 
   dress.user = leo
   dress.save

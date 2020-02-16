@@ -1,1 +1,2 @@
   <%= "#{@costume.name}, Size: #{@costume.size}, Price per day:#{@costume.price}" %>
+<%= cl_image_tag @costume.photo.key, height: 300, width: 400, crop: :fill %>
