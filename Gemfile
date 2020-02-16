@@ -28,8 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 
-gem 'bootstrap-sass'
-gem 'bootstrap'
+# gem 'bootstrap-sass'
+# gem 'bootstrap'
 
 
 # Use ActiveStorage variant
